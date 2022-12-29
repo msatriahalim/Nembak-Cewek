@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {width: 120px; margin: auto; display: flex; justify-content: space-between;}
+    </style>
+    <title>Just For You &#129505</title>
+  </head>
+  <body style="text-align: center">
+    <img src="love.gif" alt="Satria" style="height: 280px" />
+    <h1>Hallo</h1>
+    <h2>Mau Gak Jadi Pacarku??</h2>
+    <div>
+      <button onclick="mau()">MAU</button>
+      <button onclick="atau()">HMM</button>
+      <button onmouseover="gak(this)">GAK</button>
+    </div>
+    <script>
+      function mau() {
+        alert("Makasih mau nerima aku :)");
+        alert("Kirim jawabannya ke WA aku ya");
+
+        location.assign("https://wa.me/6289636954488");
+      }
+      function atau() {
+        alert("Masih mikir-mikir dulu ya??");
+        alert("Yaudah deh nih buat kamu <3");
+
+        location.assign("index.html");
+      }
+      function gak(ini) { 
+        ini.style.position = "absolute";
+        ini.style.left = `${Math.floor(Math.random() * 90)}%`;
+        ini.style.top = `${Math.floor(Math.random() * 90)}%`;
+      }
+    </script>
+  </body>
+</html>
